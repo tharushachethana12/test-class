@@ -32,6 +32,6 @@ const mongoURL = process.env.MONGO_URI;
 mongoose.connect(mongoURL)
 .then(()=> console.log("Server is running!"))
 .then(()=>{
-    app.listen(5000);
+    app.listen(5001);
 })
 .catch((error)=> console.error("error connecting",error));
